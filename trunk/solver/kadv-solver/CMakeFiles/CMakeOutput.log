@@ -1,0 +1,504 @@
+The system is: Darwin - 13.3.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/2.8.11.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/2.8.11.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec359179989/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec359179989.dir/build.make CMakeFiles/cmTryCompileExec359179989.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec359179989.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec359179989.dir/testCCompiler.c.o   -c /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec359179989
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec359179989.dir/link.txt --verbose=1
+/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec359179989.dir/testCCompiler.c.o  -o cmTryCompileExec359179989  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec834606739/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec834606739.dir/build.make CMakeFiles/cmTryCompileExec834606739.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec834606739
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec834606739.dir/link.txt --verbose=1
+/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec834606739   
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin13.3.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec834606739 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-236.4
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec834606739/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec834606739.dir/build.make CMakeFiles/cmTryCompileExec834606739.dir/build]
+  ignore line: [/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec834606739]
+  ignore line: [/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec834606739.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec834606739   ]
+  ignore line: [Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)]
+  ignore line: [Target: x86_64-apple-darwin13.3.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec834606739 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.9.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec834606739] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec834606739.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec137703801/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec137703801.dir/build.make CMakeFiles/cmTryCompileExec137703801.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec137703801.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec137703801.dir/testCXXCompiler.cxx.o -c /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec137703801
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec137703801.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec137703801.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec137703801  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1827685192/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1827685192.dir/build.make CMakeFiles/cmTryCompileExec1827685192.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1827685192
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1827685192.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1827685192   
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin13.3.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec1827685192 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-236.4
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1827685192/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1827685192.dir/build.make CMakeFiles/cmTryCompileExec1827685192.dir/build]
+  ignore line: [/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1827685192]
+  ignore line: [/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1827685192.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1827685192   ]
+  ignore line: [Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)]
+  ignore line: [Target: x86_64-apple-darwin13.3.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec1827685192 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.9.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1827685192] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1827685192.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the function XOpenDisplay exists in the /usr/X11R6/lib/libX11.dylib;/usr/X11R6/lib/libXext.dylib passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec531787632/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec531787632.dir/build.make CMakeFiles/cmTryCompileExec531787632.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec531787632.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec531787632.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec531787632
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec531787632.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec531787632.dir/CheckFunctionExists.c.o  -o cmTryCompileExec531787632  -L/usr/X11R6/lib  /usr/X11R6/lib/libX11.dylib /usr/X11R6/lib/libXext.dylib 
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1377131000/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1377131000.dir/build.make CMakeFiles/cmTryCompileExec1377131000.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1377131000.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1377131000.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1377131000
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1377131000.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1377131000.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1377131000  
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3214048060/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3214048060.dir/build.make CMakeFiles/cmTryCompileExec3214048060.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3214048060.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec3214048060.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3214048060
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3214048060.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=connect -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3214048060.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3214048060  
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3611794216/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3611794216.dir/build.make CMakeFiles/cmTryCompileExec3611794216.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3611794216.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec3611794216.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3611794216
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3611794216.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=remove -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3611794216.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3611794216  
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3977011564/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3977011564.dir/build.make CMakeFiles/cmTryCompileExec3977011564.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3977011564.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec3977011564.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3977011564
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3977011564.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=shmat -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3977011564.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3977011564  
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3600368834/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3600368834.dir/build.make CMakeFiles/cmTryCompileExec3600368834.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3600368834.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3600368834.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3600368834
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3600368834.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3600368834.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3600368834  -L/usr/X11R6/lib  -lICE 
+
+
+Determining if the function XOpenDisplay exists in the /usr/X11R6/lib/libX11.dylib;/usr/X11R6/lib/libXext.dylib passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec364395861/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec364395861.dir/build.make CMakeFiles/cmTryCompileExec364395861.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec364395861.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec364395861.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec364395861
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec364395861.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec364395861.dir/CheckFunctionExists.c.o  -o cmTryCompileExec364395861  -L/usr/X11R6/lib  /usr/X11R6/lib/libX11.dylib /usr/X11R6/lib/libXext.dylib 
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3328728676/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3328728676.dir/build.make CMakeFiles/cmTryCompileExec3328728676.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3328728676.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec3328728676.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3328728676
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3328728676.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3328728676.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3328728676  
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec633874473/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec633874473.dir/build.make CMakeFiles/cmTryCompileExec633874473.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec633874473.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec633874473.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec633874473
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec633874473.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=connect -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec633874473.dir/CheckFunctionExists.c.o  -o cmTryCompileExec633874473  
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec183217686/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec183217686.dir/build.make CMakeFiles/cmTryCompileExec183217686.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec183217686.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec183217686.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec183217686
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec183217686.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=remove -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec183217686.dir/CheckFunctionExists.c.o  -o cmTryCompileExec183217686  
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3357436600/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3357436600.dir/build.make CMakeFiles/cmTryCompileExec3357436600.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3357436600.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec3357436600.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3357436600
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3357436600.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=shmat -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3357436600.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3357436600  
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2303626136/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2303626136.dir/build.make CMakeFiles/cmTryCompileExec2303626136.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2303626136.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec2303626136.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2303626136
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2303626136.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2303626136.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2303626136  -L/usr/X11R6/lib  -lICE 
+
+
+Determining if the function XOpenDisplay exists in the /usr/X11R6/lib/libX11.dylib;/usr/X11R6/lib/libXext.dylib passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2727969721/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2727969721.dir/build.make CMakeFiles/cmTryCompileExec2727969721.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2727969721.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2727969721.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2727969721
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2727969721.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2727969721.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2727969721  -L/usr/X11R6/lib  /usr/X11R6/lib/libX11.dylib /usr/X11R6/lib/libXext.dylib 
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2453592230/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2453592230.dir/build.make CMakeFiles/cmTryCompileExec2453592230.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2453592230.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec2453592230.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2453592230
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2453592230.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2453592230.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2453592230  
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3332726956/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3332726956.dir/build.make CMakeFiles/cmTryCompileExec3332726956.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3332726956.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec3332726956.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3332726956
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3332726956.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=connect -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3332726956.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3332726956  
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec185786631/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec185786631.dir/build.make CMakeFiles/cmTryCompileExec185786631.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec185786631.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec185786631.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec185786631
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec185786631.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=remove -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec185786631.dir/CheckFunctionExists.c.o  -o cmTryCompileExec185786631  
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2887482749/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2887482749.dir/build.make CMakeFiles/cmTryCompileExec2887482749.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2887482749.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2887482749.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2887482749
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2887482749.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=shmat -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2887482749.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2887482749  
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1526434220/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1526434220.dir/build.make CMakeFiles/cmTryCompileExec1526434220.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1526434220.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1526434220.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1526434220
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1526434220.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1526434220.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1526434220  -L/usr/X11R6/lib  -lICE 
+
+
+Determining if the function XOpenDisplay exists in the /usr/X11R6/lib/libX11.dylib;/usr/X11R6/lib/libXext.dylib passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec799186338/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec799186338.dir/build.make CMakeFiles/cmTryCompileExec799186338.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec799186338.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec799186338.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec799186338
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec799186338.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec799186338.dir/CheckFunctionExists.c.o  -o cmTryCompileExec799186338  -L/usr/X11R6/lib  /usr/X11R6/lib/libX11.dylib /usr/X11R6/lib/libXext.dylib 
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2219199247/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2219199247.dir/build.make CMakeFiles/cmTryCompileExec2219199247.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2219199247.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec2219199247.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2219199247
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2219199247.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2219199247.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2219199247  
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2710208109/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2710208109.dir/build.make CMakeFiles/cmTryCompileExec2710208109.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2710208109.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec2710208109.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2710208109
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2710208109.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=connect -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2710208109.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2710208109  
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2139798741/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2139798741.dir/build.make CMakeFiles/cmTryCompileExec2139798741.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2139798741.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec2139798741.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2139798741
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2139798741.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=remove -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2139798741.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2139798741  
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3059196151/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3059196151.dir/build.make CMakeFiles/cmTryCompileExec3059196151.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3059196151.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec3059196151.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3059196151
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3059196151.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=shmat -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3059196151.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3059196151  
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec752454822/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec752454822.dir/build.make CMakeFiles/cmTryCompileExec752454822.dir/build
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_progress_report /Users/shikichi_takuya/kadv-mates/trunk/solver/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec752454822.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec752454822.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/2.8.11.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec752454822
+/usr/local/Cellar/cmake/2.8.11.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec752454822.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec752454822.dir/CheckFunctionExists.c.o  -o cmTryCompileExec752454822  -L/usr/X11R6/lib  -lICE 
+
+

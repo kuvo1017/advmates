@@ -1,0 +1,5 @@
+/Users/shikichi_takuya/advmates/trunk/solver/CMakeFiles/advmates-calc.dir
+/Users/shikichi_takuya/advmates/trunk/solver/CMakeFiles/check-syntax.dir
+/Users/shikichi_takuya/advmates/trunk/solver/CMakeFiles/dox.dir
+/Users/shikichi_takuya/advmates/trunk/solver/CMakeFiles/mates.dir
+/Users/shikichi_takuya/advmates/trunk/solver/CMakeFiles/mates-util.dir

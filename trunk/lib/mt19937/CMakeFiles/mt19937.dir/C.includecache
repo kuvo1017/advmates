@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/shikichi_takuya/advmates/trunk/lib/mt19937/mt19937ar.c
+stdio.h
+-
+mt19937ar.h
+/Users/shikichi_takuya/advmates/trunk/lib/mt19937/mt19937ar.h
+
+/Users/shikichi_takuya/advmates/trunk/lib/mt19937/mt19937ar.h
+

@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/map_editor.png</file>
+        <file>images/tool_intsec.png</file>
+        <file>images/tool_road.png</file>
+        <file>images/tool_road_repl.png</file>
+        <file>images/intsec_normal.png</file>
+        <file>images/intsec_select.png</file>
+        <file>images/intsec_dest.png</file>
+        <file>images/intsec_error_normal.png</file>
+        <file>images/intsec_error_select.png</file>
+        <file>images/intsec_error_dest.png</file>
+        <file>images/intsec_clear_normal.png</file>
+        <file>images/intsec_clear_select.png</file>
+        <file>images/intsec_clear_dest.png</file>
+        <file>images/intsec_clear_error_normal.png</file>
+        <file>images/intsec_clear_error_select.png</file>
+        <file>images/intsec_clear_error_dest.png</file>
+        <file>images/scroll_cursor.png</file>
+        <file>images/tool_zoom_in.png</file>
+        <file>images/tool_zoom_out.png</file>
+        <file>images/line2.png</file>
+        <file>images/line4.png</file>
+        <file>images/road_dir.png</file>
+        <file>images/tool_select.png</file>
+        <file>images/tool_edit.png</file>
+        <file>images/tool_large.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% AdvMates-manual-jp
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt, a4j, twoside, openany, titlepage]{jsarticle}
+%
+% パッケージ
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ascmac}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage[margin=30truemm]{geometry}
+%
+% subsubsection まで目次に表示
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%
+% マクロ
+\newcommand{\advmatesver}{0.5} % ADVENTURE_Matesのバージョン
+%
+% bibtex
+\bibliographystyle{plain}
+%
+% 表紙
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \setcounter{page}{0}
+    \thispagestyle{fancy}
+    \lhead{}
+    \rhead{ADVENTURE SYSTEM}
+    \cfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \
+    \begin{center}
+      \vspace{3cm}
+      \huge{{\bf ADVENTURE\_Mates}} \\[1ex]
+      \large{Multi-Agent-based Traffic and Environment Simulator} \\[1ex]
+      \Large{{\bf Version \advmatesver}} \\[1ex]
+      \large{プログラム使用マニュアル} \\
+      \vfill
+      \Large{{\bf Octber 2013}} \\[1ex]
+      \Large{ADVENTURE Project}
+    \end{center}
+  \end{titlepage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 表紙
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 目次用ヘッダとフッタ
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{}
+\rhead{ADVENTURE SYSTEM}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{roman}
+
+% 目次
+\tableofcontents
+\newpage
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 本文用ヘッダとフッタ
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{}
+\rhead{ADVENTURE SYSTEM}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{arabic}
+
+%
+% 以下，本文
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. はじめに
+\include{jp-sect1}
+
+\section{入力ファイル}
+\section{出力ファイル}
+\section{GUI}
+
+%
+ほげほげほげ
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 参考文献
+\newpage
+\bibliography{jp-ref.bib}
+\addcontentsline{toc}{section}{参考文献}
+
+\end{document}

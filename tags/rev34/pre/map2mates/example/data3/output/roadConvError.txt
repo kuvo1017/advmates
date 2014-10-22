@@ -1,0 +1,22 @@
+intersection id 161 road num 2
+2 road lane mismacth
+
+intersection id 909 road num 2
+2 road lane mismacth
+
+intersection id 947 road num 2
+2 road lane mismacth
+
+intersection id 1087 road num 2
+2 road lane mismacth
+
+intersection id 1648 road num 2
+2 road lane mismacth
+
+
+summary intersection
+  5 - 2 road lane mismacth
+
+summary road
+
+summary all intersection 5 road 0

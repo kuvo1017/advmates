@@ -1,0 +1,28 @@
+intersection id 47 road num 2
+2 road lane mismacth
+
+intersection id 86 road num 2
+2 road lane mismacth
+
+intersection id 104 road num 2
+2 road lane mismacth
+
+intersection id 159 road num 2
+2 road lane mismacth
+
+intersection id 234 road num 2
+2 road lane mismacth
+
+intersection id 310 road num 2
+2 road lane mismacth
+
+intersection id 324 road num 2
+2 road lane mismacth
+
+
+summary intersection
+  7 - 2 road lane mismacth
+
+summary road
+
+summary all intersection 7 road 0

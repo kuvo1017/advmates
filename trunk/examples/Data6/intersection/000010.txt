@@ -1,0 +1,10 @@
+t,r,r,r,s,s,s,l,l,l
+l,t,r,r,r,s,s,s,l,l
+l,l,t,r,r,r,s,s,s,l
+l,l,l,t,r,r,r,r,s,s
+s,l,l,l,t,r,r,r,s,s
+s,s,l,l,l,t,r,r,r,s
+s,s,s,l,l,l,t,r,r,r
+r,s,s,s,l,l,l,t,r,r
+r,r,s,s,s,l,l,l,t,r
+r,r,r,s,s,s,l,l,l,t

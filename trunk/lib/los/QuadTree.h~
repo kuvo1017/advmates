@@ -1,0 +1,123 @@
+#ifndef __QUADTREE_H__
+#define __QUADTREE_H__
+
+#include <stdio.lib>
+#include <vector>
+#include "Geometry.h"
+
+using namespace std;
+
+//######################################################################
+class ChkTree{
+ public:
+  ChkTree(){
+    _flag = 0;
+    for (int i=0; i<4; i++) _child[i]=NULL;
+  };
+  ~ChkTree(){
+    for (int i=0; i<4; i++) delete _child[i];
+  };
+
+  // フラグへのアクセッサ
+  int flag() const{return _flag;};
+  void setFlag(int flg){_flag=flg;};
+
+  // 子ノードを追加する
+  void addChild(int i, ChkTree* cct){_child[i]=cct;};
+  // 子ノードをまとめて追加する
+  void setChild(){
+    for (int i=0; i<4; i++) _child[i] = new ChkTree();
+  };
+  // 子ノードを返す
+  ChkTree* child(int i){return _child[i];};
+
+ private:
+  ChkTree* _child[4];
+  int _flag;
+};
+//######################################################################
+class QuadTree{
+ public:
+  QuadTree();
+  QuadTree(int depth, int id);
+  ~QuadTree();
+
+  // 子ノードを返す
+  QuadTree* child(int i);
+
+  // 壁を登録する
+  void pushWall(MyPolygon* wall, int pid);
+
+  // 子ノードを登録する
+  void pushQuadTree(MyPolygon* wall, int pid, int depth, vector<QuadTree*>* trees);
+
+  // 子ツリーを作成する
+  void setChildTree(int depth, int id, vector<QuadTree*>* trees);
+
+  // ベクトルt(transmit)->r(receive)がノードと交差するかチェックする
+  void checkNode(MyVector3D t, MyVector3D r, int depth, ChkTree* ct,
+		 double a, double b);
+
+  // ベクトルが領域に含まれる障害物と交差するか判定する
+  void countCollision(MyVector3D t, MyVector3D r, ChkTree* ct,
+		      int* collisions, double* arrayT);
+
+  // 車体の場合はIDを渡す必要があったため作成
+  void countCollision(LOSVehicle* tv, LOSVehicle* tr, ChkTree* ct,
+		      int* collisions, double* arrayT);
+
+  // vecが左右どちらに所属するか
+  int xpos(MyVector3D vec);
+
+  // vecが上下どちらに所属するか
+  int ypos(MyVector3D vec);
+
+  // ??
+  void createControlPoint(MyVector3D *cp1,
+			  MyVector3D *cp2,
+			  MyVector3D *cp3,
+			  MyVector3D *cp4,
+			  double x, double y, double a, double b);
+
+  // 座標へのアクセッサ
+  double xmin() const{return _xmin;};
+  double xmax() const{return _xmax;};
+  double ymin() const{return _ymin;};
+  double ymax() const{return _ymax;};
+  //void setField(MyField* field);
+  void set(double xmin, double xmax, double ymin, double ymax){
+    _xmin = xmin;
+    _xmax = xmax;
+    _ymin = ymin;
+    _ymax = ymax;
+  }
+
+  // IDへのアクセッサ
+  void setDepth(int depth){_depth = depth;};
+  int depth() const{return _depth;};
+  void setId(int id){_id = id;};
+  int id() const{return _id;};
+
+ private:
+  // 階層
+  int _depth;
+  // 識別番号
+  int _id;
+
+  // 子ノード
+  /*
+   * サブコンテナ。deleteはGeoManagerで行う。
+   */
+  QuadTree* _child[4];
+
+  // 壁のリスト
+  vector<MyPolygon*> _walls;
+
+  // ポリゴンIDのリスト
+  vector<int> _pids;
+
+  // 領域の座標
+  double _xmin, _xmax, _ymin, _ymax;
+};
+
+#endif //__QUADTREE_H__

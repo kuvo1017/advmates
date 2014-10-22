@@ -1,0 +1,5 @@
+#begin time, end time, start, goal, volume, vehicle type,
+#num of stop points, stop point id, ...
+0, 86400000, 2, ******, 100, 21, 0
+0, 86400000, 2, ******, 100, 51, 0
+

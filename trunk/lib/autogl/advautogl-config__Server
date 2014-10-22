@@ -1,0 +1,10 @@
+#! /bin/sh -f
+
+# Server
+#   software emulation on server 
+#     AutoGL.edu (client-server / web application edition)
+#     No libraries are required.
+
+libs="-lm"
+
+echo "${libs} "

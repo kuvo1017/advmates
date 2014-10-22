@@ -1,0 +1,2 @@
+#begin inter ID, end inter ID, speed limit[km/h]
+0,4,20

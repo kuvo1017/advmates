@@ -1,0 +1,53 @@
+# Makefile
+
+MATES_DIR    = ../../src
+GZSTREAM_DIR = ../gzstream
+AUTOGL_DIR   = ../autogl
+
+OBJS	= GeoManager.o \
+	Geometry.o \
+	QuadTree.o \
+	shpopen.o \
+	dbfopen.o
+
+OBJE	= LOSSimulator.o \
+	Visualizer.o
+
+#----------------------------------------------------------------------
+.SUFFIXES: .cpp
+.cpp.o:
+	g++ -g -Wall -DEXCLUDE_BUS_PERSON -I$(MATES_DIR) -I$(GZSTREAM_DIR) -I$(AUTOGL_DIR) -c $<
+
+#----------------------------------------------------------------------
+all	: shpopen.o dbfopen.o los
+
+#----------------------------------------------------------------------
+LIBL1 = liblos.a
+LIBL2 = liblosTest.a
+
+$(LIBL1)	: $(OBJS)
+	ar -rc $(LIBL1) $(OBJS) && ranlib $@
+$(LIBL2)	: $(OBJS) $(OBJE)
+	ar -rc $(LIBL2) $(OBJS) $(OBJE) && ranlib $@
+
+#----------------------------------------------------------------------
+los: $(OBJS) $(OBJE) $(LIBL2) mainLOS.o
+	g++ -Wall -g -lm -lstdc++ -fopenmp -O2 -o $@ \
+	mainLOS.o $(OBJS) $(LIBL2) \
+	$(MATES_DIR)/libmatesGL.a \
+	$(GZSTREAM_DIR)/libgzstream.a \
+	$(AUTOGL_DIR)/libautogl.a \
+	-L$(MATES_DIR) \
+	-L$(GZSTREAM_DIR) -lgzstream -lz \
+	-L$(AUTOGL_DIR) -lautogl `$(AUTOGL_DIR)/advautogl-config`
+
+shpopen.o:      shpopen.c shapefil.h
+	gcc -g -c shpopen.c
+
+dbfopen.o:      dbfopen.c shapefil.h
+	gcc -g -c dbfopen.c
+
+lib: $(LIBL1)
+
+clean:
+	rm -f los shpopen.o dbfopen.o $(OBJS) $(OBJE) mainLOS.o $(LIBL1) $(LIBL2)

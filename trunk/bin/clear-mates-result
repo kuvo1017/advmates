@@ -1,0 +1,31 @@
+#! /bin/sh
+
+# remove all output files of MATES
+DIR=.
+if [ $# -ge 1 ]; then
+    if [ -d $1 ]; then
+	DIR=$1
+    fi
+fi
+
+find ${DIR} -type d > rm_list
+
+while read line; do
+    if [ -e ${line}/network.txt ]; then
+	echo "clear output files of mates in ${line}"
+	RESULT_DIR=${line}/result
+	rm ${RESULT_DIR}/*.txt
+	if [ -e ${line}/execmates.lock ]; then
+	    rm -f ${line}/execmates.lock 
+	fi
+	find ${RESULT_DIR}/inst/ -type f -exec rm {} \;
+	if [ -e ${RESULT_DIR}/timeline/vehicle ]; then
+	    rm -r ${RESULT_DIR}/timeline/vehicle
+	fi
+	if [ -e ${RESULT_DIR}/timeline/signal ]; then
+	    rm -r ${RESULT_DIR}/timeline/signal
+	fi
+    fi
+done < rm_list
+
+rm -f rm_list

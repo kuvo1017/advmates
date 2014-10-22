@@ -1,0 +1,418 @@
+icc -v -Wall -pg -g -lm -lrt -fast  -fopenmp  -o los los.c timer.c sub.c vector.c wall.c quadtree.c shpopen.o dbfopen.o
+icc: command line warning #10006: ignoring unknown option '-fopenmp'
+Version 11.0 
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccALjADaas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/icctUA7Or.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/icctUA7Or.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=los.c los.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccbDvJblas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/iccAmehWP.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/iccAmehWP.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=timer.c timer.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+timer.c(7): remark #1418: external function definition with no prior declaration
+  void timer_start()
+       ^
+
+timer.c(33): remark #1418: external function definition with no prior declaration
+  double timer_end()
+         ^
+
+timer.c(46): remark #1418: external function definition with no prior declaration
+  void run_end()
+       ^
+
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccKi7lfwas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/icc2Z6q3d.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/icc2Z6q3d.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=sub.c sub.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+sub.c(8): remark #1418: external function definition with no prior declaration
+  void MakeWall(int *wallnum, int *nEntities, int HEIGHTDBF, SHPHandle *hSHP, DBFHandle *hDBF, POLYGON p[], FIELD *place, double adfMaxBound[], double adfMinBound[], QUADTREE *qt){
+       ^
+
+sub.c(22): remark #1418: external function definition with no prior declaration
+  void CommunicationLOS(int MAXCALTIME, int CARNUMBER, int *wallnum, double adfMaxBound[], double adfMinBound[], FIELD *place, QUADTREE *qt ){
+       ^
+
+sub.c(38): warning #161: unrecognized #pragma
+  #pragma omp parallel for schedule(static, 1)
+          ^
+
+sub.c(76): remark #1418: external function definition with no prior declaration
+  void DriversLOS(int MAXCALTIME, int CARNUMBER, int *wallnum, double adfMaxBound[], double adfMinBound[], FIELD *place, QUADTREE *qt){
+       ^
+
+sub.c(92): warning #161: unrecognized #pragma
+  #pragma omp parallel for schedule(static, 1)
+          ^
+
+sub.c(77): remark #593: variable "los" was set but never used
+    int i, j, caltime, transmitnum, los[CARNUMBER][CARNUMBER];
+                                    ^
+
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccUcYsOHas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/iccvicBaC.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/iccvicBaC.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=vector.c vector.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+vector.c(17): remark #1418: external function definition with no prior declaration
+  void Vec3Add (VECTOR3D *ret, VECTOR3D *a, VECTOR3D *b) {
+       ^
+
+vector.c(24): remark #1418: external function definition with no prior declaration
+  void Vec3Mul (VECTOR3D *ret , VECTOR3D *a, double *k) {
+       ^
+
+vector.c(31): remark #1418: external function definition with no prior declaration
+  void Vec3Sub(VECTOR3D *ret, VECTOR3D *a, VECTOR3D *b) {
+       ^
+
+vector.c(38): remark #1418: external function definition with no prior declaration
+  void CenterOfGravity(VECTOR3D *ret, POLYGON *a){
+       ^
+
+vector.c(44): remark #1418: external function definition with no prior declaration
+  void Vec3Cross (VECTOR3D *ret, VECTOR3D *a, VECTOR3D *b) {
+       ^
+
+vector.c(50): remark #1418: external function definition with no prior declaration
+  void Vec3Dot (double *t, VECTOR3D *a, VECTOR3D *b) {
+       ^
+
+vector.c(54): remark #1418: external function definition with no prior declaration
+  void StraightLine(VECTOR3D *transmit, VECTOR3D *receive, double *a, double *b){
+       ^
+
+vector.c(60): remark #1418: external function definition with no prior declaration
+  void JudgeLinePlane(double *t, VECTOR3D *p, VECTOR3D *q, POLYGON *a) {
+       ^
+
+vector.c(74): remark #1572: floating-point equality and inequality comparisons are unreliable
+    if (bottom == 0.0) *t = -1.0;
+                  ^
+
+vector.c(97): remark #1418: external function definition with no prior declaration
+  void CollisionPosition(VECTOR3D *s, VECTOR3D *p, VECTOR3D *q, double *t) {
+       ^
+
+vector.c(104): remark #1418: external function definition with no prior declaration
+  void Direction(double *direction ,VECTOR3D *p, VECTOR3D *q) {
+       ^
+
+vector.c(108): remark #1418: external function definition with no prior declaration
+  void WallDirection (double *walldirection, double *direction, double *t1, double *t2) {
+       ^
+
+vector.c(113): remark #1418: external function definition with no prior declaration
+  VECTOR3D MakeCarPosition(double adfMinBound[4], double adfMaxBound[4]){
+           ^
+
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccWXIs0Tas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/iccwvoLh0.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/iccwvoLh0.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=wall.c wall.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+wall.c(4): remark #1418: external function definition with no prior declaration
+  int WallNumber (int nEntities, SHPHandle  hSHP) {
+      ^
+
+wall.c(15): remark #1418: external function definition with no prior declaration
+  void MakePolygon1(int j , int i , int HEIGHTDBF, DBFHandle   hDBF,  SHPObject *psShape, POLYGON *p){
+       ^
+
+wall.c(28): remark #1418: external function definition with no prior declaration
+  void MakePolygon2(int j , int i , int HEIGHTDBF, DBFHandle   hDBF, SHPObject *psShape, POLYGON *p){
+       ^
+
+wall.c(41): remark #1418: external function definition with no prior declaration
+  void MakeCarPolygon(VECTOR3D carposition, CARWALL *c, int cartype){
+       ^
+
+wall.c(104): remark #1418: external function definition with no prior declaration
+  void MakeBuildingWall(SHPHandle hSHP, DBFHandle hDBF,int *nEntities, POLYGON p[], int HEIGHTDBF){
+       ^
+
+wall.c(125): remark #1418: external function definition with no prior declaration
+  void InputSHPFile(int argc, char ** argv,  SHPHandle *hSHP, DBFHandle *hDBF, int *nEntities, int *nShapeType, double adfMaxBound[], double adfMinBound[] ){
+       ^
+
+wall.c(195): remark #1418: external function definition with no prior declaration
+  int double_comp(const void *a, const void *b)
+      ^
+
+wall.c(201): remark #1572: floating-point equality and inequality comparisons are unreliable
+    } else if( a1 == a2 ){ 
+                     ^
+
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -_g -mP3OPT_inline_alloca -D__HONOR_STD -D__ICC=1100 -D__INTEL_COMPILER=1100 -D_MT "-_Asystem(unix)" -D__ELF__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20081105 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__NO_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=1 -D__GNUC_PATCHLEVEL__=2 -D__NO_INLINE__ -D__pentium4 -D__pentium4__ -D__SSE2__ -D__SSE3__ -D__SSSE3__ -D__tune_pentium4__ -D__MMX__ -D__SSE__ -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux -D__x86_64 -D__x86_64__ -_k -_8 -_l -_b --gnu_version=412 -_W5 --gcc-extern-inline --mspp --multibyte_chars -r --prec_div=0 --eh_nirvana -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccZiIQM6as_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_dummy_obj_gen -mIPOPT_summary -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/iccvJTVoo.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/iccvJTVoo.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=quadtree.c quadtree.c
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/ia32/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/ipp/em64t/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/mkl/include
+ /opt/intel/Compiler/11.0/074/tbb/include
+ /opt/intel/Compiler/11.0/074/include/intel64
+ /opt/intel/Compiler/11.0/074/include
+ /usr/local/include
+ /usr/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.1.2/include
+End of search list.
+quadtree.c(31): remark #1418: external function definition with no prior declaration
+  void xposition(VECTOR3D *car, int *x, FIELD *place){
+       ^
+
+quadtree.c(32): remark #2259: non-pointer conversion from "double" to "int" may lose significant bits
+    *x = (car->position[0] - place->length[0]) / place->length[1];
+       ^
+
+quadtree.c(35): remark #1418: external function definition with no prior declaration
+  void yposition(VECTOR3D *car, int *y, FIELD *place){
+       ^
+
+quadtree.c(36): remark #2259: non-pointer conversion from "double" to "int" may lose significant bits
+    *y = (place->length[2] - car->position[1]) / place->length[3];
+       ^
+
+quadtree.c(39): remark #1418: external function definition with no prior declaration
+  void InitQuadTree(QUADTREE *qt){
+       ^
+
+quadtree.c(47): remark #1418: external function definition with no prior declaration
+  void InitCheckQuad(CHECKQUAD *cq){
+       ^
+
+quadtree.c(55): remark #1418: external function definition with no prior declaration
+  void InitField(FIELD *place, double adfMaxBound[], double adfMinBound[]){
+       ^
+
+quadtree.c(63): remark #1418: external function definition with no prior declaration
+  void SetChildPlaceQuadTree(FIELD *place, FIELD *ChildPlace ,QUADTREE *q, int i){
+       ^
+
+quadtree.c(95): remark #1418: external function definition with no prior declaration
+  void PushQuadWall(POLYGON *wall ,QUADTREE *q){
+       ^
+
+quadtree.c(114): remark #1418: external function definition with no prior declaration
+  void PushQuadTree(POLYGON *wall, FIELD *place, QUADTREE *q, int depth){
+       ^
+
+quadtree.c(136): remark #1418: external function definition with no prior declaration
+  void SetChildPlaceCheckQuad(FIELD *place, FIELD *ChildPlace , int i, CHECKQUAD *cq){
+       ^
+
+quadtree.c(169): remark #1418: external function definition with no prior declaration
+  void CrossCenterPoint(VECTOR3D *center1, VECTOR3D *center2,VECTOR3D *center3, VECTOR3D *center4, double *x, double *y, double *a, double *b){
+       ^
+
+quadtree.c(187): remark #1418: external function definition with no prior declaration
+  void CheckNode(VECTOR3D transmit, VECTOR3D receive, QUADTREE *q, FIELD *place, int depth, CHECKQUAD *cq, double *a, double *b){
+       ^
+
+quadtree.c(310): remark #1418: external function definition with no prior declaration
+  void CollisionCheck(VECTOR3D transmit, VECTOR3D receive, QUADTREE *q, int *PolygonHitNum, CHECKQUAD *cq, double arrayt[]){
+       ^
+
+quadtree.c(332): remark #1418: external function definition with no prior declaration
+  void FreeWall2(OBJECTLIST *o){
+       ^
+
+quadtree.c(341): remark #1418: external function definition with no prior declaration
+  void FreeQuadTree2(QUADTREE *qt){
+       ^
+
+quadtree.c(353): remark #1418: external function definition with no prior declaration
+  void FreeQuadTree1(QUADTREE *qt){
+       ^
+
+quadtree.c(363): remark #1418: external function definition with no prior declaration
+  void FreeCheckQuad2(CHECKQUAD *cq){
+       ^
+
+quadtree.c(380): remark #1418: external function definition with no prior declaration
+  void FreeCheckQuad1(CHECKQUAD *cq){
+       ^
+
+/opt/intel/Compiler/11.0/074/bin/intel64/mcpcom    -mP1OPT_version=1100 -mGLOB_diag_file=/tmp/icctUA7Or.diag -mP1OPT_print_version=FALSE -mP3OPT_use_mspp_call_convention -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE "-mGLOB_options_string=-v -Wall -pg -g -lm -lrt -fast -fopenmp -o los" -mGLOB_cxx_limited_range=FALSE -mP2OPT_eh_nirvana -mP3OPT_emit_line_numbers -mGLOB_debug_target=GLOB_DEBUG_TARGET_ALL -mGLOB_debug_format=GLOB_DEBUG_FORMAT_DWARF20 -mGLOB_as_output_backup_file_name=/tmp/iccpwppbMas_.s -mIPOPT_activate -mGLOB_machine_model=GLOB_MACHINE_MODEL_EFI2 -mGLOB_extended_instructions=0x80 -mGLOB_advanced_optim=TRUE -mP2OPT_fdiv_opt=1 -mP3OPT_call_mcount -mIPOPT_args_in_regs=0 -mIPOPT_ninl_limit=0 -mIPOPT_ninl_user_level=0 -mIPOPT_args_in_regs=0 -mPGOPTI_value_profile_use=T -mGLOB_opt_level=3 -mP2OPT_hlo_level=3 -mP2OPT_hlo -mPAROPT_par_report=1 -mGLOB_brutus_ipo_link_only -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_ipo_mo_activate -mIPOPT_ipo_mo_nfiles=1 -mIPOPT_source_files_list=/tmp/iccKvqKdylst -mIPOPT_short_data_info=/tmp/iccS9cDxXsdata -mIPOPT_link_script_file=/tmp/iccirbwRmscript -mIPOPT_global_data "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/gcrt1.o" "/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-linux-gnu/4.1.2/crtbeginT.o" "-static" "-o" "los" "-L/opt/intel/Compiler/11.0/074/lib/intel64" "-limf" "-lm" "-lrt" "/tmp/icctUA7Or.o" "/tmp/iccAmehWP.o" "/tmp/icc2Z6q3d.o" "/tmp/iccvicBaC.o" "/tmp/iccwvoLh0.o" "/tmp/iccvJTVoo.o" "shpopen.o" "dbfopen.o" "-L/opt/intel/Compiler/11.0/074/ipp/em64t/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/em64t" "-L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/opt/intel/Compiler/11.0/074/ipp/ia32/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/32" "-L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/opt/intel/Compiler/11.0/074/ipp/em64t/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/em64t" "-L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/64" "-L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/opt/intel/Compiler/11.0/074/lib/intel64" "-L/opt/intel/Compiler/11.0/074/ipp/em64t/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/em64t" "-L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib" "-L/opt/intel/Compiler/11.0/074/ipp/ia32/lib" "-L/opt/intel/Compiler/11.0/074/mkl/lib/32" "-L/usr/lib/gcc/x86_64-linux-gnu/4.1.2" "-L/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64" "-L/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../.." "-L/lib64" "-L/lib" "-L/usr/lib64" "-L/usr/lib" "-limf" "-lsvml" "-lm" "-lipgo" "-ldecimal" "-lirc" "-lgcc" "-lgcc_eh" "-lirc" "-lc" "-lgcc" "-lgcc_eh" "-lirc_s" "-ldl" "-lc" "/usr/lib/gcc/x86_64-linux-gnu/4.1.2/crtend.o" "/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_obj_output_file_name=/tmp/ipo_iccoRG7fk.o -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_obj_output_file=/tmp/ipo_iccoRG7fk.o -mP1OPT_source_file_name=/tmp/ipo_iccoRG7fk.c /tmp/icctUA7Or.o /tmp/iccAmehWP.o /tmp/icc2Z6q3d.o /tmp/iccvicBaC.o /tmp/iccwvoLh0.o /tmp/iccvJTVoo.o shpopen.o dbfopen.o -mIPOPT_mo_unique_name=los -mIPOPT_object_files=/tmp/iccz6xZzJtxt -mIPOPT_cmdline_link_new=/tmp/iccsQTRT8txt
+ipo: warning #11003: no IR in object file shpopen.o; was the source file compiled with -ipo
+ipo: warning #11003: no IR in object file dbfopen.o; was the source file compiled with -ipo
+ipo: remark #11000: performing multi-file optimizations
+ipo: remark #11005: generating object file /tmp/ipo_iccoRG7fk.o
+ld    -o los -L/opt/intel/Compiler/11.0/074/lib/intel64 -L/opt/intel/Compiler/11.0/074/ipp/em64t/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/em64t -L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/opt/intel/Compiler/11.0/074/ipp/ia32/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/32 -L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/opt/intel/Compiler/11.0/074/ipp/em64t/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/em64t -L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/64 -L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/opt/intel/Compiler/11.0/074/lib/intel64 -L/opt/intel/Compiler/11.0/074/ipp/em64t/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/em64t -L/opt/intel/Compiler/11.0/074/tbb/em64t/cc4.1.0_libc2.4_kernel2.6.16.21/lib -L/opt/intel/Compiler/11.0/074/ipp/ia32/lib -L/opt/intel/Compiler/11.0/074/mkl/lib/32 -L/usr/lib/gcc/x86_64-linux-gnu/4.1.2 -L/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64 -L/usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../.. -L/lib64 -L/lib -L/usr/lib64 -L/usr/lib /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/gcrt1.o /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.1.2/crtbeginT.o -Bstatic -limf -lm -lrt /tmp/ipo_iccoRG7fk.o shpopen.o dbfopen.o -limf -lsvml -lm -lipgo -ldecimal -lirc -lgcc -lgcc_eh -lirc -lc -lgcc -lgcc_eh -lirc_s -ldl -lc /usr/lib/gcc/x86_64-linux-gnu/4.1.2/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../lib64/crtn.o
+/tmp/ipo_iccoRG7fk.o: In function `timer_start':
+/r/home3/wtakaaki/forecast/LOS3/timer.c:10: undefined reference to `clock_gettime'
+/tmp/ipo_iccoRG7fk.o: In function `timer_end':
+/r/home3/wtakaaki/forecast/LOS3/timer.c:37: undefined reference to `clock_gettime'
+rm /tmp/icca4g8AFlibgcc
+
+rm /tmp/icc9QsYH3gnudirs
+
+rm /tmp/iccEyk7vMgas
+
+rm /tmp/iccALjADaas_.s
+
+rm /tmp/iccQc83Kyldashv
+
+rm /tmp/iccxoGZSWarg
+
+rm /tmp/iccbDvJblas_.s
+
+rm /tmp/iccfU7tuJldashv
+
+rm /tmp/icchinIN7arg
+
+rm /tmp/iccKi7lfwas_.s
+
+rm /tmp/iccT3n0GUldashv
+
+rm /tmp/iccVe638iarg
+
+rm /tmp/iccUcYsOHas_.s
+
+rm /tmp/icclhzSt6ldashv
+
+rm /tmp/icc6MzJ9uarg
+
+rm /tmp/iccWXIs0Tas_.s
+
+rm /tmp/icci1wcRildashv
+
+rm /tmp/icccQ8lIHarg
+
+rm /tmp/iccZiIQM6as_.s
+
+rm /tmp/iccHg4lRvldashv
+
+rm /tmp/iccS5zgWUarg
+
+rm /tmp/iccz6xZzJtxt
+
+rm /tmp/iccsQTRT8txt
+
+rm /tmp/iccKvqKdylst
+
+rm /tmp/iccS9cDxXsdata
+
+rm /tmp/iccirbwRmscript
+
+rm /tmp/ipo_iccoRG7fk.o
+
+rm /tmp/iccpwppbMas_.s
+
+rm /tmp/iccsT6ivbldashv
+
+rm /tmp/icciFoAPAgnudirs
+
+rm /tmp/icchbkta0ldashv
+
+rm /tmp/icc6lqKvparg
+
+rm /tmp/icctUA7Or.o
+
+rm /tmp/icctUA7Or.il
+
+rm /tmp/iccAmehWP.o
+
+rm /tmp/iccAmehWP.il
+
+rm /tmp/icc2Z6q3d.o
+
+rm /tmp/icc2Z6q3d.il
+
+rm /tmp/iccvicBaC.o
+
+rm /tmp/iccvicBaC.il
+
+rm /tmp/iccwvoLh0.o
+
+rm /tmp/iccwvoLh0.il
+
+rm /tmp/iccvJTVoo.o
+
+rm /tmp/iccvJTVoo.il
+
+make: *** [los] Error 1
