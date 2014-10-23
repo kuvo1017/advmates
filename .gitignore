@@ -1,3 +1,7 @@
 tag/
 branch/
-
+./trunk/solver/Makefile.alt
+./trunk/solver/CMakeFiles/
+./trunk/solver/Makefile
+./trunk/solver/CMakeCache.txt
+./trunk/solver/kadv-solver/
