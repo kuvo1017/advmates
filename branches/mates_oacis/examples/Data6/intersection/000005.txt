@@ -1,5 +1,0 @@
-t,r,s,l,l
-l,t,r,s,s
-s,l,t,r,r
-r,s,l,t,r
-r,s,l,l,t

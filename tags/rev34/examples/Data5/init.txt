@@ -1,4 +1,0 @@
-#key=value
-#see also GVInitializer::init()
-RIGHT_TURN_LANE_LENGTH = 30
-SPEED_LIMIT_SECTION = 60

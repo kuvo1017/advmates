@@ -1,6 +1,0 @@
-
-summary intersection
-
-summary road
-
-summary all intersection 0 road 0
